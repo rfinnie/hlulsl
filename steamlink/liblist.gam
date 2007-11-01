@@ -1,0 +1,14 @@
+// Half-Life: Uplink (SteamLink)
+// Ported to Steam by Ryan Finnie <ryan@finnie.org>
+// http://www.finnie.org/software/steamlink
+
+game "Half-Life: Uplink"
+icon "steamlink"
+developer "Valve"
+developer_url "http://www.steampowered.com/v/index.php"
+manual "http://www.finnie.org/software/steamlink"
+
+startmap "hldemo1"
+trainmap "t0a0"
+gamedll	"../valve/dlls/hl.dll"
+type "singleplayer_only"

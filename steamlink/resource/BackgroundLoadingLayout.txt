@@ -1,0 +1,7 @@
+resolution	320	200
+
+resource/background/320_1_a_loading.tga		scaled		0	0
+resource/background/320_1_b_loading.tga		scaled		256	0
+
+
+

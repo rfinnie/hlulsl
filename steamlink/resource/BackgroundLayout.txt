@@ -1,0 +1,9 @@
+resolution	640	480
+
+resource/background/640_1_a_splash.tga		scaled		0	0
+resource/background/640_1_b_splash.tga		scaled		256	0
+resource/background/640_1_c_splash.tga		scaled		512	0
+
+resource/background/640_2_a_splash.tga		scaled		0	256
+resource/background/640_2_b_splash.tga		scaled		256	256
+resource/background/640_2_c_splash.tga		scaled		512	256
