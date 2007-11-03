@@ -3,7 +3,7 @@
 // http://www.finnie.org/software/steamlink
 
 game "Half-Life: Uplink"
-icon "steamlink"
+icon "icon"
 developer "Valve"
 developer_url "http://www.steampowered.com/v/index.php"
 manual "http://www.finnie.org/software/steamlink"

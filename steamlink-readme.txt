@@ -1,5 +1,5 @@
 Half-Life: Uplink for Steam, A.K.A. SteamLink
-Version 1.0, 2007-10-31
+Version 1.1, 2007-11-03
 Ported by Ryan Finnie <ryan@finnie.org>
 http://www.finnie.org/software/steamlink
 
@@ -19,13 +19,6 @@ C:\Program Files\Steam\SteamApps\joeuser\half-life\steamlink
 Restart Steam, and "Half-Life: Uplink" should appear as a "Third party
 mod".
 
-- NOTES -
-It appears the "Servers" options cannot be removed from the main menu.
-"Create Server" will crash the game.
-
-Other than that, SteamLink should be as true to the original as
-possible.  Enjoy!
-
 - THANKS -
 Valve Software, of course, for Half-Life, Half-Life: Uplink and Steam.
 
@@ -34,3 +27,6 @@ for Half-Life: Uplink.
 
 Werner Spahl's Uplink Addon, for fixing the
 scientist-speaking-with-two-tongues bug.
+
+Rusty Le Cyborg, for showing how to remove the multiplayer options from
+the main menu.
