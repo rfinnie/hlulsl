@@ -10,5 +10,7 @@ manual "http://www.halflifeuplink.com/steamlink"
 
 startmap "hldemo1"
 trainmap "t0a0"
-gamedll	"../valve/dlls/hl.dll"
+gamedll "../valve/dlls/hl.dll"
+gamedll_linux "../valve/dlls/hl.so"
+gamedll_osx "../valve/dlls/hl.dylib"
 type "singleplayer_only"
