@@ -1,5 +1,5 @@
 Half-Life: Uplink for Steam, A.K.A. SteamLink
-Version 1.3.2, 2013-01-30
+Version 1.4
 Ported by Ryan Finnie <ryan@finnie.org>
 http://www.halflifeuplink.com/steamlink
 
@@ -11,8 +11,8 @@ backgrounds are taken directly from the original Uplink, as opposed to
 the generic Half-Life screens in Steam.
 
 - INSTALL -
-Please see http://www.halflifeuplink.com/steamlink for Linux / OS X 
-installation instructions.
+Please see http://www.halflifeuplink.com/steamlink for installation 
+instructions.
 
 - THANKS -
 Valve Software, of course, for Half-Life, Half-Life: Uplink and Steam.
