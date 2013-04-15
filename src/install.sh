@@ -36,7 +36,7 @@ cp -a "$S"/* "$B/steamlink/"
 cat >"$B/steamlink/run_steamlink.sh" <<EOM
 #!/bin/sh
 
-$B/hl.sh -game steamlink "$@"
+"$B/hl.sh" -game steamlink "\$@"
 EOM
 chmod 0755 "$B/steamlink/run_steamlink.sh"
 
