@@ -32,15 +32,8 @@ echo
 mkdir -p "$B/steamlink"
 cp -a "$S"/* "$B/steamlink/"
 
-# Create run script
-cat >"$B/steamlink/run_steamlink.sh" <<EOM
-#!/bin/sh
-
-here="\$(readlink -f "\$(command -v "\$0")")" ; here="\${here%/*}"
-
-"\$here/../hl.sh" -game steamlink "\$@"
-EOM
-chmod 0755 "$B/steamlink/run_steamlink.sh"
+# Install run script
+install -m 0755 "$S/run_steamlink.sh" "$B/steamlink/run_steamlink.sh"
 
 # Install symlink
 [ -d "$HOME/bin" ] || mkdir -p "$HOME/bin"
