@@ -4,14 +4,19 @@ set -e
 
 S="$(dirname "$0")"
 
-if [ -e "$HOME/.steam/root/SteamApps/common/Half-Life/hl.sh" ]; then
+if [ -n "$1" ]; then
+  if [ -e "$1/hl.sh" ]; then
+    B="$1"
+  else
+    echo "$1 does not appear to be a valid Half-Life installation."
+    exit 1
+  fi
+elif [ -e "$HOME/.steam/root/SteamApps/common/Half-Life/hl.sh" ]; then
   B="$HOME/.steam/root/SteamApps/common/Half-Life"
 elif [ -e "$HOME/.local/share/Steam/SteamApps/common/Half-Life/hl.sh" ]; then
   B="$HOME/.local/share/Steam/SteamApps/common/Half-Life"
 elif [ -e "$HOME/Library/Application\ Support/Steam/SteamApps/common/Half-Life/hl.sh" ]; then
   B="$HOME/Library/Application\ Support/Steam/SteamApps/common/Half-Life"
-elif [ "$1" -a -e "$1/hl.sh" ]; then
-  B="$1"
 else
   echo "Cannot find Steam Half-Life installation directory!"
   echo "Please provide it by running:"
