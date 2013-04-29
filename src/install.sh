@@ -4,7 +4,9 @@ set -e
 
 S="$(dirname "$0")"
 
-if [ -e "$HOME/.local/share/Steam/SteamApps/common/Half-Life/hl.sh" ]; then
+if [ -e "$HOME/.steam/root/SteamApps/common/Half-Life/hl.sh" ]; then
+  B="$HOME/.steam/root/SteamApps/common/Half-Life"
+elif [ -e "$HOME/.local/share/Steam/SteamApps/common/Half-Life/hl.sh" ]; then
   B="$HOME/.local/share/Steam/SteamApps/common/Half-Life"
 elif [ -e "$HOME/Library/Application\ Support/Steam/SteamApps/common/Half-Life/hl.sh" ]; then
   B="$HOME/Library/Application\ Support/Steam/SteamApps/common/Half-Life"
@@ -34,7 +36,9 @@ cp -a "$S"/* "$B/steamlink/"
 cat >"$B/steamlink/run_steamlink.sh" <<EOM
 #!/bin/sh
 
-$B/hl.sh -game steamlink "$@"
+here="\$(readlink -f "\$(command -v "\$0")")" ; here="\${here%/*}"
+
+"\$here/../hl.sh" -game steamlink "\$@"
 EOM
 chmod 0755 "$B/steamlink/run_steamlink.sh"
 
