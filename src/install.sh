@@ -37,6 +37,18 @@ echo
 mkdir -p "$B/steamlink"
 cp -a "$S"/* "$B/steamlink/"
 
+# Hack to make the Half-Life: Uplink menu item in Steam work
+if [ -e "$B/hl.exe" ]; then
+  if [ ! -h "$B/hl.exe" ]; then
+    echo "WARNING: hl.exe exists, but is not a symlink."
+    echo "Did Steam install the base Windows version of Half-Life?"
+    echo "Launching Half-Life: Uplink from the Steam menu will not likely work."
+    echo
+  fi
+else
+  ln -s hl.sh "$B/hl.exe"
+fi
+
 # Install run script
 install -m 0755 "$S/run_steamlink.sh" "$B/steamlink/run_steamlink.sh"
 
