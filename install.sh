@@ -35,7 +35,7 @@ echo
 
 # Copy files
 mkdir -p "$B/steamlink"
-cp -a "$S"/* "$B/steamlink/"
+cp -a "$S"/src/* "$B/steamlink/"
 
 # Hack to make the Half-Life: Uplink menu item in Steam work
 if [ -e "$B/hl.exe" ]; then
@@ -48,9 +48,6 @@ if [ -e "$B/hl.exe" ]; then
 else
   ln -s hl.sh "$B/hl.exe"
 fi
-
-# Install run script
-install -m 0755 "$S/run_steamlink.sh" "$B/steamlink/run_steamlink.sh"
 
 # Install symlink
 [ -d "$HOME/bin" ] || mkdir -p "$HOME/bin"
