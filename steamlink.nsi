@@ -17,7 +17,7 @@
 
 ; HM NIS Edit Wizard helper defines
 !define PRODUCT_NAME "SteamLink"
-!define PRODUCT_VERSION "1.4"
+!define PRODUCT_VERSION "1.5"
 !define PRODUCT_PUBLISHER "Ryan Finnie"
 !define PRODUCT_WEB_SITE "http://www.halflifeuplink.com/steamlink"
 !define PRODUCT_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}"

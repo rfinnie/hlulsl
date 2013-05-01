@@ -1,5 +1,5 @@
 Half-Life: Uplink for Steam, A.K.A. SteamLink
-Version 1.4
+Version 1.5
 Ported by Ryan Finnie <ryan@finnie.org>
 http://www.halflifeuplink.com/steamlink
 
