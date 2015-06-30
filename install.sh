@@ -11,6 +11,8 @@ if [ -n "$1" ]; then
     echo "$1 does not appear to be a valid Half-Life installation."
     exit 1
   fi
+elif [ -e "$HOME/.steam/steam/steamapps/common/Half-Life/hl.sh" ]; then
+  B="$HOME/.steam/steam/steamapps/common/Half-Life"
 elif [ -e "$HOME/.steam/root/SteamApps/common/Half-Life/hl.sh" ]; then
   B="$HOME/.steam/root/SteamApps/common/Half-Life"
 elif [ -e "$HOME/.local/share/Steam/SteamApps/common/Half-Life/hl.sh" ]; then
