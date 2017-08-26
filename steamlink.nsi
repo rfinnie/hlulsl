@@ -17,9 +17,9 @@
 
 ; HM NIS Edit Wizard helper defines
 !define PRODUCT_NAME "SteamLink"
-!define PRODUCT_VERSION "1.5"
+!define PRODUCT_VERSION "1.6"
 !define PRODUCT_PUBLISHER "Ryan Finnie"
-!define PRODUCT_WEB_SITE "http://www.halflifeuplink.com/steamlink"
+!define PRODUCT_WEB_SITE "https://www.halflifeuplink.com/steamlink"
 !define PRODUCT_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}"
 !define PRODUCT_UNINST_ROOT_KEY "HKCU"
 
@@ -33,7 +33,7 @@
 !define MUI_HEADERIMAGE_BITMAP "header.bmp"
 !define MUI_WELCOMEFINISHPAGE_BITMAP "welcomefinish.bmp"
 
-!define MUI_WELCOMEPAGE_TEXT "Version ${PRODUCT_VERSION}$\r$\nhttp://www.halflifeuplink.com/steamlink$\r$\n$\r$\nThis wizard will guide you through the installation of SteamLink.$\r$\n$\r$\nSteamLink requires Steam, and Half-Life to be installed and run at least once.  SteamLink Setup will automatically determine the correct folder to install into for your Steam profile.$\r$\n$\r$\nClick Next to continue."
+!define MUI_WELCOMEPAGE_TEXT "Version ${PRODUCT_VERSION}$\r$\nhttps://www.halflifeuplink.com/steamlink$\r$\n$\r$\nThis wizard will guide you through the installation of SteamLink.$\r$\n$\r$\nSteamLink requires Steam, and Half-Life to be installed and run at least once.  SteamLink Setup will automatically determine the correct folder to install into for your Steam profile.$\r$\n$\r$\nClick Next to continue."
 !define MUI_FINISHPAGE_TEXT "SteamLink has been installed on your computer.$\r$\n$\r$\nSteam must be restarted for SteamLink to show on the games list.$\r$\n$\r$\nClick Finish to close this wizard."
 !define MUI_DIRECTORYPAGE_TEXT_DESTINATION "Steam Half-Life Mods Folder"
 !define MUI_DIRECTORYPAGE_TEXT_TOP "Setup will install SteamLink in the following folder.$\r$\n$\r$\nThis folder has been detected as the proper folder for Half-Life mods for your current Steam profile.  To install in a different folder, click Browse and select another folder.$\r$\n$\r$\nClick Install to start the installation."

@@ -1,7 +1,7 @@
 Half-Life: Uplink for Steam, A.K.A. SteamLink
-Version 1.5
+Version 1.6
 Ported by Ryan Finnie <ryan@finnie.org>
-http://www.halflifeuplink.com/steamlink
+https://www.halflifeuplink.com/steamlink
 
 - ABOUT -
 SteamLink is an effort to run Half-Life: Uplink from Steam as easily as
@@ -11,7 +11,7 @@ backgrounds are taken directly from the original Uplink, as opposed to
 the generic Half-Life screens in Steam.
 
 - INSTALL -
-Please see http://www.halflifeuplink.com/steamlink for installation 
+Please see https://www.halflifeuplink.com/steamlink for installation 
 instructions.
 
 - THANKS -
