@@ -19,7 +19,7 @@ SetCompressor /FINAL /SOLID lzma
 
 ; HM NIS Edit Wizard helper defines
 !define PRODUCT_NAME "HL!UL!SL - Half-Life: Uplink for Steam"
-!define PRODUCT_VERSION "2.0"
+!define PRODUCT_VERSION "2.1"
 !define PRODUCT_PUBLISHER "Ryan Finnie"
 !define PRODUCT_WEB_SITE "https://www.halflifeuplink.com/hlulsl"
 !define PRODUCT_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}"
