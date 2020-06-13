@@ -1,0 +1,19 @@
+name: ci
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Dependency packages
+      run: sudo apt-get -y install nsis exiftool
+    - name: makensis
+      run: makensis hlulsl.nsi
+    - name: exiftool test
+      run: exiftool hlulsl-setup.exe
