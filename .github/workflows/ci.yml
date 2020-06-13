@@ -8,12 +8,17 @@ on:
     - main
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Dependency packages
-      run: sudo apt-get -y install nsis exiftool
+    - name: Install Scoop
+      run: |
+        Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+        scoop bucket add extras
+        scoop install nsis
+    - name: Print NSIS version
+      run: makensis -VERSION
+    - name: Print NSIS compile flags
+      run: makensis -HDRINFO
     - name: makensis
       run: makensis hlulsl.nsi
-    - name: exiftool test
-      run: exiftool hlulsl-setup.exe
