@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# HL!UL!SL run_hlulsl
+# Copyright (C) 2013-2021 Ryan Finnie
+# SPDX-License-Identifier: MPL-2.0
+
 hldir="$(dirname "$(dirname "$(readlink "$0")")")"
 MODNAME="hlulsl"
 

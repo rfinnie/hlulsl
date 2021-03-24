@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# HL!UL!SL install
+# Copyright (C) 2013-2021 Ryan Finnie
+# SPDX-License-Identifier: MPL-2.0
+
 set -e
 
 S="$(dirname "$0")"
