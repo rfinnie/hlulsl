@@ -17,15 +17,21 @@ if [ -n "$1" ]; then
     echo "$1 does not appear to be a valid Half-Life installation."
     exit 1
   fi
-elif [ -e "$HOME/.steam/steam/steamapps/common/Half-Life/hl.sh" ]; then
-  INSTDIR="$HOME/.steam/steam/steamapps/common/Half-Life"
-elif [ -e "$HOME/.steam/root/SteamApps/common/Half-Life/hl.sh" ]; then
-  INSTDIR="$HOME/.steam/root/SteamApps/common/Half-Life"
-elif [ -e "$HOME/.local/share/Steam/SteamApps/common/Half-Life/hl.sh" ]; then
-  INSTDIR="$HOME/.local/share/Steam/SteamApps/common/Half-Life"
-elif [ -e "$HOME/Library/Application\ Support/Steam/SteamApps/common/Half-Life/hl.sh" ]; then
-  INSTDIR="$HOME/Library/Application\ Support/Steam/SteamApps/common/Half-Life"
 else
+  for dir in \
+    "$HOME/.steam/steam/steamapps/common/Half-Life" \
+    "$HOME/.steam/root/SteamApps/common/Half-Life" \
+    "$HOME/.local/share/Steam/SteamApps/common/Half-Life" \
+    "$HOME/Library/Application\ Support/Steam/SteamApps/common/Half-Life" \
+    "$HOME/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/Half-Life" \
+  ; do
+    if [ -e "${dir}/hl.sh" ]; then
+      INSTDIR="${dir}"
+      break
+    fi
+  done
+fi
+if [ -z "${INSTDIR}" ]; then
   echo "Cannot find Steam Half-Life installation directory!"
   echo "Please provide it by running:"
   echo "  $0 /path/to/Steam/SteamApps/common/Half-Life"
