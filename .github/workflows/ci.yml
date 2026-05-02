@@ -4,12 +4,14 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v6
     - name: Install Scoop
       run: |
         iex "& {$(irm get.scoop.sh)} -RunAsAdmin"
+        scoop update
         scoop bucket add extras
         scoop install nsis
+        Join-Path (Resolve-Path ~).Path "scoop\shims" >> $Env:GITHUB_PATH
     - name: Print NSIS version
       run: makensis -VERSION
     - name: Print NSIS compile flags
